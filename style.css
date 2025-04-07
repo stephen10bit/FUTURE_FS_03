@@ -23,3 +23,11 @@
     align-items: center;
     gap: 30px; /* Adds space between logo/search/links */
   }
+
+  .logo img {
+    filter: drop-shadow(0 0 10px var(--secondary)); /* Adds glow effect */
+    transition: transform 0.3s ease;
+  }
+  .logo img:hover {
+    transform: scale(1.1); /* Subtle hover animation */
+  }
