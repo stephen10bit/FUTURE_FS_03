@@ -4,23 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike Rebrand</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="logo">
-            <img src="assets/logo.png" alt="Nike Rebrand Logo" width="80">
+            <img src="assets/logo.png" alt="Nike Logo" width="60">
+        </div>
+        
+        <button class="hamburger-btn" aria-label="Menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+      </div>
+
+        <div class="theme-toggle">
+          <button id="themeBtn" aria-label="Toggle theme">
+            <span class="dark-icon">🌙</span>
+            <span class="light-icon">☀️</span>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+     <!-- Add to your hero section -->
+<div class="particle-network"></div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Just Do It.</h1>
+            <p>Experience the future of sportswear</p>
+            <a href="#new" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- New Collection -->
+    <section id="new" class="collection">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="assets/products/Air Jordan 4 Retro SB Pine Green - 47.jpeg" alt= "Air Jordan 4">
+                <h3>Air Jordan 4</h3>
+                <p class="price">$149.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="assets/products/Nike Air Jordan 3 Og _fire Red_ 2022 Dn3707-160 Sneakers Shoes Mens Woman Size.jpeg" alt="Nike Air Jordan 3">
+                <h3>Nike Air Jordan 3</h3>
+                <p class="price">$120.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img src="assets/products/Nike Air Force 1 '07 Men's Shoe.jpeg" alt="Nike Air Force 1">
+              <h3>Nike Air Force 1</h3>
+              <p class="price">$129.99</p>
+              <button class="add-to-cart">Add to Cart</button>
           </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Search...">
+          <div class="product-card">
+            <img src="assets/products/NIKE Air Jordan Backpack Size L, Black, Modern.jpeg" alt="Nike Air Jordan Backpack">
+            <h3>Nike Air Jordan Backpack</h3>
+            <p class="price">$129.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div> <div class="product-card">
+              <img src="assets/products/Nike Sportswear Tech Fleece Joggers - Grey - 3XL.jpeg" alt="Nike Sportswear Tech">
+              <h3>Nike Sportswear Tech</h3>
+              <p class="price">$129.99</p>
+              <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="links">
-          <a href="#">New</a>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">Sale</a>
-        </div>
-      </nav>
-    <h1>Redesigning Nike with AI</h1>
+    </section>
+
+
+    <!-- Filter Controls -->
+<div class="filters">
+  <button class="filter-btn active" data-filter="all">All Products</button>
+  <button class="filter-btn" data-filter="shoes">Shoes</button>
+  <button class="filter-btn" data-filter="clothing">Clothing</button>
+  <button class="filter-btn" data-filter="accessories">Accessories</button>
+</div>
+
+<!-- Updated Product Grid -->
+<div class="product-grid">
+  <div class="product-card" data-category="shoes">
+    <img src="assets/products/Air Jordan 4 Retro SB Pine Green - 47.jpeg" alt="Air Jordan 4 Retro">
+    <h3>Air Jordan 4 Retro</h3>
+    <p class="price">$149.99</p>
+  </div>
+  
+  <div class="product-card" data-category="shoes">
+    <img src="assets/products/Nike Air Jordan 3 Og _fire Red_ 2022 Dn3707-160 Sneakers Shoes Mens Woman Size.jpeg" alt="Nike Air Jordan 3">
+    <h3>Nike Air Jordan 3</h3>
+    <p class="price">$129.99</p>
+  </div>
+
+  <div class="product-card" data-category="shoes">
+    <img src="assets/products/Nike Air Force 1 '07 Men's Shoe.jpeg" alt="Nike Air Force 1">
+    <h3>Nike Air Force 1</h3>
+    <p class="price">$129.99</p>
+  </div>
+
+  <div class="product-card" data-category="accessories">
+    <img src="assets/products/NIKE Air Jordan Backpack Size L, Black, Modern.jpeg" alt="Nike Air Jordan Backpack">
+    <h3>Nike Air Jordan Backpack</h3>
+    <p class="price">$129.99</p>
+  </div>
+
+  <div class="product-card" data-category="clothing">
+    <img src="assets/products/Nike Sportswear Tech Fleece Joggers - Grey - 3XL.jpeg" alt="Nike Sportswear Tech">
+    <h3>Nike Sportswear Tech</h3>
+    <p class="price">$129.99</p>
+  </div>
+  
+
+  
+  <!-- Add more products with data-category attributes -->
+</div>
+<div class="floating-swooshes">
+  <div class="swoosh"></div>
+  <div class="swoosh"></div>
+</div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

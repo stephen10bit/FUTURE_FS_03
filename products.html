@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Products | Rebrand</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- Navigation (Same as homepage) -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Nike Logo" width="60">
+        </div>
+        <button class="hamburger-btn" aria-label="Menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="theme-toggle">
+            <button id="themeBtn" aria-label="Toggle theme">
+                <span class="dark-icon">🌙</span>
+                <span class="light-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="products-page">
+        <!-- Filter Controls -->
+        <section class="filter-section">
+            <div class="container">
+                <h1 class="page-title">Shop All Products</h1>
+                <div class="filters">
+                    <input type="text" class="search-input" placeholder="Search products...">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="shoes">Shoes</button>
+                        <button class="filter-btn" data-filter="apparel">Apparel</button>
+                        <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    </div>
+                    <select class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="product-listing">
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card" data-category="shoes" data-price="149.99" data-date="2023-10-15">
+                    <div class="product-badge">New</div>
+                    <div class="product-image-container">
+                        <img src="assets/products/shoe2.jpg" alt="Nike Air Max 2090" loading="lazy">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Air Max 2090</h3>
+                        <p class="product-category">Running Shoes</p>
+                        <div class="price-container">
+                            <p class="price">$149.99</p>
+                            <p class="original-price">$179.99</p>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+                
+
+                <!-- More products... -->
+                                 <!-- Product Card 1 -->
+                <article class="product-card" data-category="shoes" data-price="149.99" data-date="2023-10-15">
+                    <div class="product-badge">New</div>
+                    <div class="product-image-container">
+                        <img src="assets/products/shoe2.jpg" alt="Nike Air Max 2090" loading="lazy">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Air Max 2090</h3>
+                        <p class="product-category">Running Shoes</p>
+                        <div class="price-container">
+                            <p class="price">$149.99</p>
+                            <p class="original-price">$179.99</p>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="page-dots">...</span>
+                <button class="page-btn">5</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="js/filters.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
